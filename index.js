@@ -97,33 +97,3 @@ function updateUser(newName, newUsername){
     `;  
     updateStateButton.isOn = false;
 }
-
-
-
-
-
-
-
-
-
-/*
-const addUser = document.querySelector('#add-button');
-addUser.onclick = (event) => { 
-    event.preventDefault() 
-    const name = document.querySelector('#input-name');
-    const username = document.querySelector('#input-username');    
-    newUser = new User(userIndex, name.value, username.value);  
-    usersList.push(newUser);
-
-    let table = document.querySelector('table');
-    table.innerHTML += `
-        <tr id="${newUser.id}">
-            <td>${newUser.id}</td>
-            <td>${newUser.name}</td>
-            <td>${newUser.username}</td>
-            <td><button id="${newUser.id}" onclick = "remove(${newUser.id})">Delete</button></td>
-            <td><button id="${newUser.id}" onclick = "forceNewInput(${newUser.id})">Delete</button></td>
-        </tr>
-    `;    
-   userIndex += 1;
-};*/
